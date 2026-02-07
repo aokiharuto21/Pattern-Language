@@ -16,7 +16,7 @@ export const languages: PatternLanguage[] = [
         id: "tsubame",
         name: "燕市まちづくりパターン",
         description: "コミュニティづくりの知恵。地域の人々と共に活動するための21のコツ。",
-        themeColor: "#0066ff",
+        themeColor: "#10b981",
         format: "card",
         patternCount: 21,
     },
