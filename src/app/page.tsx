@@ -100,7 +100,7 @@ export default function Home() {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.2 }}
                 >
-                    知恵のライブラリ
+                    パターンを探索する
                 </motion.p>
 
                 {/* 統計 - カウントアップアニメーション付き */}
@@ -138,7 +138,7 @@ export default function Home() {
                         href="/languages"
                         title="LANGUAGE VIEW"
                         subtitle="本として読む"
-                        description="特定のプロジェクトを選び、その世界観に没入しながらパターンを順番に読む"
+                        description="特定のプロジェクトの世界観に没入しながら順番に読む"
                         icon="📖"
                         delay={0.3}
                     />

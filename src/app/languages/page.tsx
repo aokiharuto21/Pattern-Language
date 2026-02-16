@@ -68,7 +68,7 @@ export default function LanguagesPage() {
                         color: "#666",
                     }}
                 >
-                    本のように体系的に読む
+                    本のように体系的に読む — 全体像から細部へ
                 </p>
             </motion.div>
 
