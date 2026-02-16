@@ -212,40 +212,36 @@ export default function Home() {
                         <span>パターン・ランゲージとは？</span>
                     </Link>
 
-                    {/* History - Coming Soon */}
-                    <div
+                    {/* History */}
+                    <Link
+                        href="/history"
                         style={{
                             display: "inline-flex",
                             alignItems: "center",
                             gap: "0.5rem",
                             padding: "0.625rem 1.25rem",
-                            background: "#f5f5f5",
-                            border: "2px solid #ccc",
-                            color: "#999",
+                            background: "#fff",
+                            border: "2px solid #000",
+                            color: "#000",
                             fontWeight: 800,
                             fontSize: "0.7rem",
                             textTransform: "uppercase",
-                            cursor: "not-allowed",
-                            position: "relative",
+                            textDecoration: "none",
+                            boxShadow: "3px 3px 0 #000",
+                            transition: "all 0.15s ease",
+                        }}
+                        onMouseEnter={(e) => {
+                            e.currentTarget.style.transform = "translate(-2px, -2px)";
+                            e.currentTarget.style.boxShadow = "5px 5px 0 #000";
+                        }}
+                        onMouseLeave={(e) => {
+                            e.currentTarget.style.transform = "translate(0, 0)";
+                            e.currentTarget.style.boxShadow = "3px 3px 0 #000";
                         }}
                     >
                         <span>📜</span>
                         <span>歴史を知る</span>
-                        <span
-                            style={{
-                                position: "absolute",
-                                top: "-8px",
-                                right: "-8px",
-                                background: "#000",
-                                color: "#fff",
-                                fontSize: "0.5rem",
-                                padding: "2px 6px",
-                                fontWeight: 900,
-                            }}
-                        >
-                            SOON
-                        </span>
-                    </div>
+                    </Link>
                 </motion.div>
             </motion.div>
 
@@ -262,7 +258,7 @@ export default function Home() {
                 animate={{ opacity: 0.5 }}
                 transition={{ delay: 0.7 }}
             >
-                Pattern Language Home — 知恵のライブラリ
+                Pattern Language Home — 実践知のアーカイブ
             </motion.p>
         </div>
     );
@@ -427,6 +423,7 @@ function ModeCard({
                                     fontSize: "0.8rem",
                                     fontWeight: 600,
                                     color: "#555",
+                                    whiteSpace: "nowrap",
                                 }}
                             >
                                 {subtitle}
