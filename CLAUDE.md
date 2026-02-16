@@ -7,23 +7,21 @@
 - **Data:** 楽天主義(30) + 燕市(21) = 計51パターン
 
 ## 2. Current Status & Task
-**Status:** Phase 7 Completed ✅ / 今すぐできる修正 → Phase 8 → 9 へ
+**Status:** Phase 8 Completed ✅ / Phase 9 進行中 📝
 > 詳細なロードマップ: `docs/ROADMAP.md`
 
-### 🔥 今すぐできる修正（最優先）
-- [ ] `src/app/layout.tsx` のタイトル・説明文を本番用に修正（現在「デザイン検討」のまま）
-- [ ] `src/app/page.tsx` ModeCard の subtitle「本として読む」改行位置修正（「に読む」が孤立）
-- [ ] ホーム画面のサイト副題「知恵のライブラリ」の文言見直し
+### 🌐 Phase 9: 公開品質の仕上げ（次のメインタスク）
+- [ ] OGP 画像の設定（`public/og-image.png` + `layout.tsx` に `<meta>` タグ）
+- [ ] favicon の設定（`public/favicon.ico` または SVG）
+- [ ] `robots.txt`・`sitemap.xml` の追加（`src/app/sitemap.ts` で動的生成）
+- [ ] 各ページ固有のメタデータ設定（languages, patterns, about, history）
 
-### 📌 Phase 8: History ページ（次のメインタスク）
-- [ ] `src/app/history/page.tsx` 新規作成（タイムライン形式）
-- [ ] コンテンツ: クリストファー・アレグザンダー、GoF、現代への応用
-- [ ] `src/app/page.tsx` の History Coming Soon ボタンを実リンクに更新
-
-### 🌐 Phase 9: 公開品質の仕上げ（Phase 8 完了後）
-- [ ] OGP 画像・favicon の設定
-- [ ] `robots.txt`・`sitemap.xml` の追加
-- [ ] 各ページ固有のメタデータ設定
+### ✅ 完了済み（Phase 8 まで）
+- [x] `layout.tsx` メタデータを本番用に修正
+- [x] ModeCard subtitle 改行位置修正（`whiteSpace: "nowrap"`）
+- [x] フッター副題「知恵のライブラリ」→「実践知のアーカイブ」
+- [x] `src/app/history/page.tsx` 新規作成（縦型タイムライン、5エポック）
+- [x] ホームの「歴史を知る」Coming Soon → 実リンク化
 
 ## 3. Architecture & Data
 - **Frontend:** Next.js 15 (App Router), React 19, TypeScript, Tailwind v4

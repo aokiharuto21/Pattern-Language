@@ -105,7 +105,7 @@ export default function PatternDetail({
                 style={{
                     width: "100%",
                     height: 280,
-                    background: themeColor,
+                    background: "#fff",
                     border: "3px solid #000",
                     marginBottom: "2rem",
                     position: "relative",
